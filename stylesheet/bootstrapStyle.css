@@ -680,9 +680,9 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(145, 61, 136, 1));
 }
 .navbar-header .navbar-brand img {
-  width: 50%;
+  width: 125px;
   height: auto;
-  max-width: 250px;
+  /* max-width: 250px; */
 }
 .navbar-collapse {
   margin: 20px 0px;
@@ -1193,7 +1193,6 @@ body {
 /* end main-wrapper */
 
 /* media query starts */
-
 @media only screen and (max-width: 600px) {
   /*start of navbar*/
   .header-slider {
@@ -1207,10 +1206,10 @@ body {
     margin: 0;
   }
   .navbar-header .navbar-brand img {
-    margin-top: -50px;
-    width: 48%;
+    /* margin-top: -50px; */
+    width: 125px;
     height: auto;
-    margin-left: 0px;
+    /* margin-left: 0px; */
   }
   .navbar-header .navbar-toggle {
     border: transparent;
@@ -1430,9 +1429,13 @@ body {
     padding: 0px;
     margin: 0;
   }
+  .nav-menus {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
   .navbar-header .navbar-brand img {
-    margin-top: 30px;
-    width: 20%;
+    /* margin-top: 30px; */
+    width: 125px;
   }
   .navbar-collapse .navbar-nav li a {
     font-size: 14px;
@@ -1585,7 +1588,7 @@ body {
 @media only screen and (max-width: 1024px) and (min-width: 993px) {
   /*start of navbar*/
   .navbar-header .navbar-brand img {
-    width: 30%;
+    width: 125px;
   }
   .navbar-collapse .navbar-nav li a {
     font-size: 17px;
@@ -1596,4 +1599,13 @@ body {
   }
 
   /*end of contact section*/
+}
+
+/* media query starts */
+@media only screen and (max-width: 768px) {
+  .navbar-header .navbar-brand img {
+    margin-top: -10px;
+    width: 90px;
+    height: auto;
+  }
 }
