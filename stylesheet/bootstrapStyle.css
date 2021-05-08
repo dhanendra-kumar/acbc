@@ -883,7 +883,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 6rem 0px;
+  margin: 0rem 0px;
   text-align: center;
   padding-bottom: 10rem;
 }
@@ -893,7 +893,7 @@ body {
   width: 180px;
   line-height: 200px;
   text-align: center;
-  margin: 10px 40px;
+  margin: 40px 40px;
 }
 .workflow-item:before {
   position: absolute;
@@ -1238,10 +1238,10 @@ body {
   /*start of header-content*/
   .header-content-img-1 {
     position: absolute;
-    left: 25%;
-    top: 28%;
+    left: 20%;
+    top: 50px;
     transform: translate(-25%, -25%);
-    max-width: 50%;
+    max-width: 60%;
     height: auto;
   }
   .header-content {
