@@ -1,0 +1,16 @@
+.header{
+    flex-direction: column;
+    align-items: center;
+}
+.navbar{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+.header .navbar li:first-child a{
+    border: none;
+}
+.banner-top-box{
+    flex-direction: column;
+    align-items: center;
+}

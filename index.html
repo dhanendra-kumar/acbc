@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="web design, web development, Responsive web design">
+    <meta name="description" content="This is my first exercise of udemmy course">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/fontawesome.min.css" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link href="stylesheet/style.css" rel="stylesheet">
+    <title>ACBC ESPORTS | Gaming company </title>
+  
+</head>
+
+<body>
+     
+  <div class="wrapper">
+    
+    <div class="block animatable bounceIn">bounceIn</div>
+    <div class="block animatable bounceInLeft">bounceInLeft</div>
+    <div class="block animatable bounceInRight">bounceInRight</div>
+    
+    <div class="block animatable fadeIn">fadeIn</div>
+    <div class="block animatable fadeInDown">fadeInDown</div>
+    <div class="block animatable fadeInUp">fadeInUp</div>
+    
+    <div class="block animatable moveUp">moveUp</div>
+    
+    <div class="block animatable fadeBgColor">fadeBgColor</div>
+    
+    
+    
+    
+    <div class="block animatable bounceIn">bounceIn</div>
+    <div class="block animatable bounceInLeft">bounceInLeft</div>
+    <div class="block animatable bounceInRight">bounceInRight</div>
+    
+    <div class="block animatable fadeIn">fadeIn</div>
+    <div class="block animatable fadeInDown">fadeInDown</div>
+    <div class="block animatable fadeInUp">fadeInUp</div>
+    
+    <div class="block animatable moveUp">moveUp</div>
+    
+    <div class="block animatable fadeBgColor">fadeBgColor</div>
+    
+    
+    
+    
+    <div class="block animatable bounceIn">bounceIn</div>
+    <div class="block animatable bounceInLeft">bounceInLeft</div>
+    <div class="block animatable bounceInRight">bounceInRight</div>
+    
+    <div class="block animatable fadeIn">fadeIn</div>
+    <div class="block animatable fadeInDown">fadeInDown</div>
+    <div class="block animatable fadeInUp">fadeInUp</div>
+    
+    <div class="block animatable moveUp">moveUp</div>
+    
+    <div class="block animatable fadeBgColor">fadeBgColor</div>
+    
+    
+    
+    
+    <div class="block animatable bounceIn">bounceIn</div>
+    <div class="block animatable bounceInLeft">bounceInLeft</div>
+    <div class="block animatable bounceInRight">bounceInRight</div>
+    
+    <div class="block animatable fadeIn">fadeIn</div>
+    <div class="block animatable fadeInDown">fadeInDown</div>
+    <div class="block animatable fadeInUp">fadeInUp</div>
+    
+    <div class="block animatable moveUp">moveUp</div>
+    
+    <div class="block animatable fadeBgColor">fadeBgColor</div>
+    
+    
+    
+    
+    <div class="block animatable bounceIn">bounceIn</div>
+    <div class="block animatable bounceInLeft">bounceInLeft</div>
+    <div class="block animatable bounceInRight">bounceInRight</div>
+    
+    <div class="block animatable fadeIn">fadeIn</div>
+    <div class="block animatable fadeInDown">fadeInDown</div>
+    <div class="block animatable fadeInUp">fadeInUp</div>
+    
+    <div class="block animatable moveUp">moveUp</div>
+    
+    <div class="block animatable fadeBgColor">fadeBgColor</div>
+    
+    
+    
+    
+    <div class="block animatable bounceIn">bounceIn</div>
+    <div class="block animatable bounceInLeft">bounceInLeft</div>
+    <div class="block animatable bounceInRight">bounceInRight</div>
+    
+    <div class="block animatable fadeIn">fadeIn</div>
+    <div class="block animatable fadeInDown">fadeInDown</div>
+    <div class="block animatable fadeInUp">fadeInUp</div>
+    
+    <div class="block animatable moveUp">moveUp</div>
+    
+    <div class="block animatable fadeBgColor">fadeBgColor</div>
+    
+  </div> 
+
+         
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <script>
+   
+      jQuery(function($) {
+        
+        // Function which adds the 'animated' class to any '.animatable' in view
+        var doAnimations = function() {
+          
+          // Calc current offset and get all animatables
+          var offset = $(window).scrollTop() + $(window).height(),
+              $animatables = $('.animatable');
+          
+          // Unbind scroll handler if we have no animatables
+          if ($animatables.length == 0) {
+            $(window).off('scroll', doAnimations);
+          }
+          
+          // Check all animatables and animate them if necessary
+          $animatables.each(function(i) {
+            var $animatable = $(this);
+            if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+              $animatable.removeClass('animatable').addClass('animated');
+            }
+          });
+  
+        };
+        
+        // Hook doAnimations on scroll, and trigger a scroll
+        $(window).on('scroll', doAnimations);
+        $(window).trigger('scroll');
+  
+      });
+      </script>
+
+</body>
+
+</html>
