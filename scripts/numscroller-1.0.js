@@ -62,18 +62,24 @@
             var max=$('.roller-title-number-'+slno).attr('data-max');
             var timediff=$('.roller-title-number-'+slno).attr('data-delay');
             var increment=$('.roller-title-number-'+slno).attr('data-increment');
+            var addtionalText=$('.roller-title-number-'+slno).attr('data-addtional');
             var numdiff=max-min;
             var timeout=(timediff*1000)/numdiff;
-            numberRoll(slno,min,max,increment,timeout);
+            numberRoll(slno,min,max,increment,timeout,addtionalText);
             
     }
-    function numberRoll(slno,min,max,increment,timeout){
+    function numberRoll(slno,min,max,increment,timeout,addtionalText){
         if(min<=max){
             $('.roller-title-number-'+slno).html(min);
             min=parseInt(min)+parseInt(increment);
-            setTimeout(function(){numberRoll(eval(slno),eval(min),eval(max),eval(increment),eval(timeout))},timeout);
+            setTimeout(function(){numberRoll(eval(slno),eval(min),eval(max),eval(increment),eval(timeout),addtionalText)},timeout);
         }else{
-            $('.roller-title-number-'+slno).html(max);
+            console.log(">>>>>>" + addtionalText)
+            if (addtionalText != undefined) {
+                $('.roller-title-number-'+slno).html("" + max + addtionalText);
+            } else {
+                $('.roller-title-number-'+slno).html(max);
+            }
         }
     }
 })(jQuery);

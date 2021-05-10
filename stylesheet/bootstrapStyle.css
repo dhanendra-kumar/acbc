@@ -801,7 +801,7 @@ body {
   margin-bottom: 1rem;
 }
 .service-box-item p {
-  text-align: left;
+  text-align: justify;
 }
 .service-box-item:hover {
   background-color: white;
@@ -940,9 +940,8 @@ body {
   background-color: white;
   display: block;
   width: calc((100% / 4) - 10px);
-  padding: 0 10px;
   min-height: 180px;
-  margin-bottom: 10px;
+  margin: 5px;
   display: flex;
   align-items: center;
   opacity: 0.2;
@@ -993,6 +992,10 @@ body {
   min-height: 300px;
   position: relative;
   transition: all 1s ease-in-out;
+}
+.portfolio-box-item img {
+  width: 100%;
+  min-height: 300px;
 }
 .portfolio-box-item iframe {
   width: 100%;
