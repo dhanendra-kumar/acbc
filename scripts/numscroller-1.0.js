@@ -74,7 +74,6 @@
             min=parseInt(min)+parseInt(increment);
             setTimeout(function(){numberRoll(eval(slno),eval(min),eval(max),eval(increment),eval(timeout),addtionalText)},timeout);
         }else{
-            console.log(">>>>>>" + addtionalText)
             if (addtionalText != undefined) {
                 $('.roller-title-number-'+slno).html("" + max + addtionalText);
             } else {
