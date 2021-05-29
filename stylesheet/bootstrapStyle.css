@@ -3,6 +3,8 @@
   padding: 0px;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
 }
 :root {
   --white-color: white;
@@ -597,7 +599,7 @@ body {
 }
 .container,
 .container-fluid {
-  max-width: 1300px;
+  /* max-width: 1300px; */
   margin: auto;
   box-sizing: border-box;
 }
@@ -655,7 +657,7 @@ body {
 
 /* main-header starts */
 .header-slider {
-  background: url("../images/header.png") no-repeat center center/cover;
+  background: url("../images/background/Background.jpg") no-repeat center center/cover;
   min-height: 100vh;
   padding: 0px;
 }
@@ -666,7 +668,8 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(145, 61, 136, 1));
 }
 .navbar-header .navbar-brand img {
-  width: 125px;
+  margin-top: 5px;
+  width: 115px;
   height: auto;
   /* max-width: 250px; */
 }
@@ -687,19 +690,27 @@ body {
 }
 .header-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   position: absolute;
   left: 50%;
-  top: 70%;
-  transform: translate(-50%, -70%);
+  bottom: 5%;
+  transform: translateX(-50%);
 }
 .header-content-img-1 {
   position: absolute;
-  left: 33%;
-  top: 10%;
-  transform: translate(-33%, -10%);
-  max-width: 30%;
+  left: 20%;
+  top: 45%;
+  max-width: 60%;
   height: auto;
+  transform: translate(-20%, -45%);
+}
+.innerbox {
+  width: 50%;
+  height: 50%;
+  margin: 0 10px 0 10px;
+}
+.innerbox-img {
+  width: 100%;
 }
 
 .first-img-1-container {
@@ -712,7 +723,7 @@ body {
   animation: 1s left-to-right-slide forwards ease-in-out;
   margin-right: 15px;
 }
-.header-caption-img-1 .header-caption-img-1_0 .header-caption-img-2 {
+.header-caption-img-1 .header-caption-img-1_0 .header-caption-img-2 .header-caption-img-footer {
   width: 100%;
   height: auto;
 }
@@ -724,6 +735,14 @@ body {
   position: relative;
   animation: 1s left-to-right-slide forwards ease-in-out;
 }
+.header-caption-img-footer {
+  position: absolute;
+  animation: 1s left-to-right-slide forwards ease-in-out;
+  width: 60%;
+  left: 20%;
+  top: 60%;
+}
+
 .header-heading {
   font-size: 95px;
   margin: 2rem 0px;
@@ -918,7 +937,7 @@ body {
   padding: 3rem 0px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-evenly;
   align-items: center;
 }
@@ -930,10 +949,12 @@ body {
   margin: 5px;
   display: flex;
   align-items: center;
-  opacity: 0.2;
+  /* opacity: 0.2; */
+  transition: all 1s ease-in-out;
 }
 .partner-item:hover {
   opacity: 1;
+  transform: scale(2);
 }
 .partner-item img {
   width: 100%;
@@ -970,18 +991,18 @@ body {
 
 .portfolio-box-container .portfolio-box-item {
   float: left;
-  width: calc(100% / 3);
+  width: calc(100% / 4);
   padding: 10px;
   display: none; /* Hide all elements by default */
 }
 .portfolio-box-item .content {
-  min-height: 300px;
+  min-height: 250px;
   position: relative;
   transition: all 1s ease-in-out;
 }
 .portfolio-box-item img {
   width: 100%;
-  min-height: 300px;
+  min-height: 250px;
 }
 .portfolio-box-item iframe {
   width: 100%;
@@ -1052,15 +1073,16 @@ body {
   justify-content: flex-start;
 }
 .member-img {
-  flex-basis: calc(100% / 8);
-  height: 200px;
+  flex-basis: calc(100% / 5);
+  height: 220px;
   position: relative;
+  padding: 10px;
 }
 .member-img:after {
   content: "";
-  width: (100% / 8);
+  width: (100% / 5);
   height: 200px;
-  background: linear-gradient(to bottom, rgba(118, 93, 105, 0.6), rgba(207, 0, 15, 0.4));
+  /* background: linear-gradient(to bottom, rgba(118, 93, 105, 0.6), rgba(207, 0, 15, 0.4)); */
   position: absolute;
   top: 0;
   left: 0;
@@ -1235,7 +1257,7 @@ body {
   }
   .header-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -1260,6 +1282,10 @@ body {
     width: 7%;
   }
   .header-caption-img-2 {
+    width: 90%;
+    margin: auto;
+  }
+  .header-caption-img-footer {
     width: 90%;
     margin: auto;
   }
@@ -1434,7 +1460,7 @@ body {
   /*start of header-content*/
   .header-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -1453,6 +1479,10 @@ body {
     width: 7%;
   }
   .header-caption-img-2 {
+    width: 90%;
+    margin: auto;
+  }
+  .header-caption-img-footer {
     width: 90%;
     margin: auto;
   }
