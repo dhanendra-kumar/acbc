@@ -1217,8 +1217,8 @@ body {
     margin: 0;
   }
   .navbar-header .navbar-brand img {
-    /* margin-top: -50px; */
-    width: 125px;
+    margin-top: -10px;
+    width: 90px;
     height: auto;
     /* margin-left: 0px; */
   }
@@ -1249,10 +1249,10 @@ body {
   /*start of header-content*/
   .header-content-img-1 {
     position: absolute;
-    left: 20%;
-    top: 50px;
-    transform: translate(-25%, -25%);
-    max-width: 60%;
+    left: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    max-width: 90%;
     height: auto;
   }
   .header-content {
@@ -1260,8 +1260,16 @@ body {
     flex-direction: row;
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    bottom: 5%;
+    transform: translateX(-50%);
+  }
+  .innerbox {
+    width: 50%;
+    height: 50%;
+    margin: 0 10px 0 10px;
+  }
+  .innerbox-img {
     width: 100%;
   }
   .header-caption {
@@ -1349,10 +1357,11 @@ body {
 
   /* start partner-section */
   .partner-box-container {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .partner-item {
-    width: 100%;
+    width: calc((100% / 2) - 1rem);
   }
   /* end partner-section */
   /* start of portfolio */
@@ -1376,12 +1385,17 @@ body {
   }
 
   .portfolio-box-container .portfolio-box-item {
-    float: none;
-    width: 100%;
+    float: left;
+    width: calc(100% / 2);
     display: none; /* Hide all elements by default */
+    height: 150px;
   }
   .portfolio-box-item .content {
-    min-height: auto;
+    height: 100%;
+  }
+  .portfolio-box-item img {
+    height: 55%;
+    min-height: 55%;
   }
   .portfolio-box-item iframe {
     min-height: auto;
@@ -1389,10 +1403,10 @@ body {
   /* end of portfolio sectio */
   /*  start of team section */
   .team-cards {
-    flex-direction: column;
+    flex-direction: row;
   }
   .team-card {
-    flex-basis: 100%;
+    flex-basis: calc(100% / 3) - 1rem;
     margin-bottom: 2rem;
   }
   .team-card img {
@@ -1408,7 +1422,7 @@ body {
     height: 100px;
   }
   .member-img img {
-    height: 100px;
+    height: 80px;
   }
   .member-img:hover:after {
     width: (100% / 4);
@@ -1463,9 +1477,9 @@ body {
     flex-direction: row;
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
     width: 100%;
+    bottom: 5%;
+    transform: translateX(-50%);
   }
   .header-caption {
     margin: auto;
@@ -1621,10 +1635,10 @@ body {
 }
 
 /* media query starts */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (min-width: 600px) {
   .navbar-header .navbar-brand img {
-    margin-top: -10px;
-    width: 90px;
+    /* margin-top: 50px; */
+    width: 115px;
     height: auto;
   }
 }
