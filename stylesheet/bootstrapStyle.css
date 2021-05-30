@@ -665,7 +665,7 @@ body {
   background-color: transparent;
   border: none;
   z-index: 1;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(145, 61, 136, 1));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(29 31 62));
 }
 .navbar-header .navbar-brand img {
   margin-top: 5px;
